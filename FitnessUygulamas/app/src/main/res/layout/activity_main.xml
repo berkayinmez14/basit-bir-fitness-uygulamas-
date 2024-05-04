@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCFF90"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/adimsayarTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adım sayısı:0"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/yakilanKaloriTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yakılan kalori:0"
+        android:layout_below="@id/adimsayarTV"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Baslatmabutonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Başlat"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#77C4E6"
+        android:layout_below="@id/yakilanKaloriTV"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Durdurmabutonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durdur"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#77C4E6"
+        android:layout_below="@id/Baslatmabutonu"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/forestGumpImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/Durdurmabutonu"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:src="@drawable/forrestgump"
+
+
+        />
+
+    <Button
+        android:id="@+id/sinavCekmeButonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şınav Çek"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#77C4E6"
+        android:layout_below="@id/Durdurmabutonu"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/mekikCekmeButonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mekik Çek"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#77C4E6"
+        android:layout_below="@id/sinavCekmeButonu"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+            android:id="@+id/plankCekmeButonu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plank Yap"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#77C4E6"
+            android:layout_below="@id/mekikCekmeButonu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"/>
+    <Button
+        android:id="@+id/bisikletYapButonu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bisiklet yap"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#77C4E6"
+        android:layout_below="@id/plankCekmeButonu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#9FEEFF41"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinavCekmeActivity">
+
+    <TextView
+        android:id="@+id/zamanlayiciTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="Kalan süreniz 20 sn"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/sinavSayisiTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Şınav Sayısı: 0"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/kaloriTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sinavSayisiTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Yakılan Kalori: 0"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kaloriTV"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="Başla"
+        android:textSize="19sp"
+        android:backgroundTint="#77C4E6"/>
+
+    <Button
+        android:id="@+id/stopbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startbutton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#77C4E6"
+        android:text="Dur"
+        android:textSize="19sp"/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/kaptanAmerikaImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sinavSayisiTV"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/captainamericapushup"
+        />
+</RelativeLayout>
